@@ -74,7 +74,6 @@ const Enterprise = () => {
             <div className="space-y-2">
               {[
                 "HR Policy Manual.pdf",
-                "Q4 Financial Report.pdf",
                 "Employee Handbook.pdf",
                 "Refund Policy.docx"
               ].map((doc, i) => (
