@@ -5,7 +5,11 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/auralis/' : '/',
+  base: mode === 'production'
+    ? ((process.env.GITHUB_REPOSITORY || '').split('/')[1]
+        ? `/${(process.env.GITHUB_REPOSITORY || '').split('/')[1]}/`
+        : '/')
+    : '/',
   server: {
     host: "::",
     port: 8080,
