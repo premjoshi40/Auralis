@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { Building2, Home } from "lucide-react";
 import { ModeCard } from "@/components/ui/mode-card";
 import heroBackground from "@/assets/hero-background.jpg";
+import auralisLogo from "@/assets/auralis-logo.png";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -18,9 +19,16 @@ const Index = () => {
         
         <div className="relative z-10 container mx-auto px-6 py-20 text-center">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-              Auralis
-            </h1>
+            <div className="flex items-center justify-center gap-4">
+              <img 
+                src={auralisLogo} 
+                alt="Auralis Logo" 
+                className="w-16 h-16 md:w-20 md:h-20 animate-scale-in"
+              />
+              <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+                Auralis
+              </h1>
+            </div>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto">
               Your AI-powered document assistant. Store, search, and retrieve documents using natural language.
             </p>

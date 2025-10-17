@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import auralisLogo from "@/assets/auralis-logo.png";
 
 interface Message {
   id: string;
@@ -93,10 +94,15 @@ const Enterprise = () => {
       {/* Main Chat Area */}
       <main className="flex-1 flex flex-col">
         <div className="border-b border-border p-6">
-          <h1 className="text-2xl font-semibold">Enterprise Chat</h1>
-          <p className="text-sm text-muted-foreground mt-1">
-            Ask questions about your business documents
-          </p>
+          <div className="flex items-center gap-3">
+            <img src={auralisLogo} alt="Auralis" className="w-8 h-8" />
+            <div>
+              <h1 className="text-2xl font-semibold">Enterprise Chat</h1>
+              <p className="text-sm text-muted-foreground mt-1">
+                Ask questions about your business documents
+              </p>
+            </div>
+          </div>
         </div>
 
         <ScrollArea className="flex-1 p-6">
