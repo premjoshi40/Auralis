@@ -19,7 +19,7 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-6 py-20 text-center">
           <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-              DocBot
+              Auralis
             </h1>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl mx-auto">
               Your AI-powered document assistant. Store, search, and retrieve documents using natural language.
@@ -69,7 +69,7 @@ const Index = () => {
                 Powered by Advanced AI
               </h3>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                DocBot uses state-of-the-art RAG technology to understand and retrieve your documents
+                Auralis uses state-of-the-art RAG technology to understand and retrieve your documents
               </p>
             </div>
 

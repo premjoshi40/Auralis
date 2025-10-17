@@ -17,7 +17,7 @@ const Enterprise = () => {
     {
       id: "1",
       role: "assistant",
-      content: "Hello! I'm DocBot for Enterprise. I can help you search through your company documents, policies, and reports. How can I assist you today?"
+      content: "Hello! I'm Auralis for Enterprise. I can help you search through your company documents, policies, and reports. How can I assist you today?"
     }
   ]);
   const [inputValue, setInputValue] = useState("");
@@ -69,7 +69,7 @@ const Enterprise = () => {
         </div>
 
         <div>
-          <h3 className="text-sm font-medium mb-3 text-muted-foreground">Recent Documents</h3>
+          <h3 className="text-sm font-medium mb-3 text-muted-foreground">Example Documents</h3>
           <ScrollArea className="h-[400px]">
             <div className="space-y-2">
               {[

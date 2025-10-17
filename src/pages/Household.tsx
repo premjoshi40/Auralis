@@ -17,7 +17,7 @@ const Household = () => {
     {
       id: "1",
       role: "assistant",
-      content: "Hi there! I'm your personal DocBot. I can help you find your personal documents like IDs, bills, receipts, and warranties. What are you looking for?"
+      content: "Hi there! I'm your personal Auralis. I can help you find your personal documents like IDs, bills, receipts, and warranties. What are you looking for?"
     }
   ]);
   const [inputValue, setInputValue] = useState("");
@@ -73,11 +73,10 @@ const Household = () => {
         </div>
 
         <div>
-          <h3 className="text-sm font-medium mb-3 text-muted-foreground">My Documents</h3>
+          <h3 className="text-sm font-medium mb-3 text-muted-foreground">Example Documents</h3>
           <ScrollArea className="h-[400px]">
             <div className="space-y-2">
               {[
-                "Passport.pdf",
                 "Car Insurance.pdf",
                 "Water Bill - Jan 2024.pdf",
                 "Laptop Warranty.jpg"
